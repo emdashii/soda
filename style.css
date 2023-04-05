@@ -1,0 +1,53 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+:root {
+    --theme-light-color: #222222;
+    --theme-light-background: #FFFFFF;
+    --theme-dark-color: #DDDDDD;
+    --theme-dark-background: #222222;
+}
+
+main {
+    min-height: 100vh;
+    color: var(--theme-main-color);
+    background: var(--theme-main-background);
+}
+
+label[for="theme-light"] {
+    color: var(--theme-light-color);
+    background: var(--theme-light-background);
+    cursor: pointer;
+}
+
+label[for="theme-dark"] {
+    color: var(--theme-dark-color);
+    background: var(--theme-dark-background);
+    cursor: pointer;
+}
+
+@media (prefers-color-scheme: light){
+    :root {
+        --theme-main-color: var(--theme-light-color);
+        --theme-main-background: var(--theme-light-background);
+    }
+}
+
+@media (prefers-color-scheme: dark){
+    :root {
+        --theme-main-color: var(--theme-dark-color);
+        --theme-main-background: var(--theme-dark-background);
+    }
+}
+
+#theme-light:checked~main {
+    --theme-main-color: var(--theme-light-color);
+    --theme-main-background: var(--theme-light-background);
+}
+
+#theme-dark:checked~main {
+    --theme-main-color: var(--theme-dark-color);
+    --theme-main-background: var(--theme-dark-background);
+}
