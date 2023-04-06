@@ -1,8 +1,7 @@
 html, body {
   height: 100%;
   width: 100%;
-  font-family: Times, "Times New Roman", Georgia, serif;
-  font-size: large;
+  
 }
 
 :root {
@@ -59,9 +58,23 @@ label[for="theme-dark"] {
 }
 
 h1 {
-  letter-spacing: 0px;
+  letter-spacing: 3px;
+}
+
+h2 {
+  font-size: 34pt;
 }
 
 #footer {
   font-size: small;
+}
+
+
+.answer {
+  text-indent: 2rem;
+}
+
+p {
+  font-family: Times, "Times New Roman", Georgia, serif;
+  font-size: larger;
 }
