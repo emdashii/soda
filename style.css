@@ -1,6 +1,8 @@
-html {
+html, body {
   height: 100%;
   width: 100%;
+  font-family: Times, "Times New Roman", Georgia, serif;
+  font-size: large;
 }
 
 :root {
@@ -50,4 +52,16 @@ label[for="theme-dark"] {
 #theme-dark:checked~main {
     --theme-main-color: var(--theme-dark-color);
     --theme-main-background: var(--theme-dark-background);
+}
+
+#navbar {
+  background-color: var(--theme-main-background);
+}
+
+h1 {
+  letter-spacing: 0px;
+}
+
+#footer {
+  font-size: small;
 }
