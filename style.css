@@ -78,3 +78,11 @@ p {
   font-family: Times, "Times New Roman", Georgia, serif;
   font-size: larger;
 }
+
+#navObj {
+  display: none;
+}
+
+.form-control {
+  background-color: var(--theme-main-background);
+}
